@@ -1,41 +1,8 @@
-.galery {
-    max-width: 700px;
-    width: 100%;
-    margin: auto;
-
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
-}
-
-.galery img {
-    width: 100%;
-    height: 100%;
-    border-radius: 1rem;
-}
-
-.main h1, .main h3 {
-    text-align: center;
-}
-
-.result_grid {
-    max-width: 700px;
-    width: 100%;
-    margin: auto;
-
-    display: grid;
-    grid-template-columns: repeat(3, 2fr);
-    gap: 1rem;
-}
-
-.result_grid img {
-    width: 100%;
-    height: 100%;
-    border-radius: 1rem;
-}
-
-.result_grid img, .result_grid h2, .result_grid h3 {
-    text-align: center;
+body{
+    padding: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #0d1b2a;
+    background-color: #e0e1dd;
 }
 
 .menu{
@@ -47,16 +14,19 @@
     gap: 1rem; 
 }
 
+.header_buttons:hover{
+    font-weight: 600;
+    text-decoration: underline;
+}
+
 .register, .register:hover, .log_in, .log_in:hover, .result_button {
     text-align: center;
     padding: 1rem;
-    
-    
 }
 
 .register {
     background-color: #0d1b2a;
-    border-radius: 1rem;
+    border-radius: 2rem;
     color: #e0e1dd;
 }
 
@@ -69,7 +39,7 @@
 
 .log_in {
     background-color: #415a77;
-    border-radius: 1rem;
+    border-radius: 2rem;
     color: #e0e1dd;
 }
 
@@ -84,6 +54,58 @@
     font-weight: 800;
 }
 
+.galery {
+    max-width: 700px;
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-bottom: 20px;
+}
+
+.galery img {
+    width: 200px;
+    height: 200px;
+    border-radius: 0.5rem;
+    background-size: cover;
+}
+
+.main h2, .main h3 {
+    text-align: center;
+}
+
+.main h2{
+    margin-bottom:0.5rem;
+}
+
+.main h3 {
+    font-style: italic;
+    font-weight: lighter;
+    margin-top: 0.5rem;
+    margin-bottom: 3rem;
+}
+
+.result_grid {
+    max-width: 700px;
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 1rem;  
+}
+
+.result_grid img {
+    width: 300px;
+    height: 300px;
+    border-radius: 0.5rem;
+    align-self: center;
+}
+
+.result_grid h2, .result_grid p {
+    text-align: left;
+}
+
 .main, .result_grid {
     padding: 1rem;
     margin: auto;
@@ -91,7 +113,7 @@
 
 .result_button {
     background-color: #0d1b2a;
-    border-radius: 1rem;
+    border-radius: 2rem;
     color: #e0e1dd;
 }
 
@@ -110,9 +132,3 @@
     grid-template-columns: repeat(1, 3fr);
 }
 
-body{
-    padding: 1rem;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #0d1b2a;
-    background-color: #e0e1dd;
-}
